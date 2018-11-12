@@ -1,3 +1,5 @@
+Basic cash register excercise practicing some new skills we learned at NEOLAND Fullstack bootcamp.
+
 # CajaRegistradora
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.2.
