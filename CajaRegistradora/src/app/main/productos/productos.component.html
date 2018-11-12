@@ -1,0 +1,21 @@
+
+<div class="col-12  bg-dark text-white pl-2">
+	<h2>{{titulo}}</h2>
+</div>
+<div class="col-12">
+	<div class="row  ">
+		<div class="card  col-4 fondo" style="width: 18rem;" *ngFor=" let p of arrProductos">
+			<h5 class=" text-center">{{p.nombre}}</h5>
+			<div>
+				<img (click)="handleClick(p)" class="card-img-top" [src]="'assets/images/'+p.imagen" alt="Card image cap"> 
+				<p class="card-text text-center ">{{p.precio}} €</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+

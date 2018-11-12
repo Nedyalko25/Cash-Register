@@ -1,0 +1,10 @@
+
+	<div class="col-8 borde">
+		<app-productos (enviarProducto)="handleEnvioProducto($event)" [arrProductos]="arrComida" [titulo]="titleComida" class="row"></app-productos>		
+		<app-productos (enviarProducto)="handleEnvioProducto($event)" [arrProductos]="arrBebida" [titulo]="titleBebida" class="row"></app-productos>
+	</div>
+	<div class="col-4 borde">
+		<app-lista (borrarProducto)="handleBorrar($event)" [total]="total" [arrSelect]="arrSelect" class="row" ></app-lista>
+	</div>
+
+

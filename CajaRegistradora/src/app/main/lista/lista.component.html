@@ -1,0 +1,21 @@
+
+	<div class="col-12 bg-warning ">
+		<h2 >LISTA</h2>
+	</div>
+	<div class="col-12 p-0">
+		<div class="fondo col-12 ">
+			<div *ngFor="let ps of arrSelect, let i = index"class=" row border-bottom border-secondary p-1"  >
+				<h6 class="col-5 p-1" >{{ps.producto.nombre}} </h6>
+				<h6 class="col-5 text-right p-1">{{ps.cantidad}} x {{ps.producto.precio}} € </h6>
+				<button (click)="handleDelete(i)" type="button" class="col-2 btn  boton font-weight-bold text-center p-1">X</button>
+				
+
+			</div>
+		</div>
+		
+		<div  class="row fondo-total col-12 p-1">
+			<h2 class="col-6 p-1">TOTAL  </h2><h2 class="col-6 p-1 text-right">{{total}} €</h2>
+		</div>
+	</div>
+
+
